@@ -12,7 +12,9 @@ it("google test", function () {
 
     // Handle new Origin as moved for Google during the test
     cy.origin('https://www.cypress.io', () => {
-        cy.get('.osano-cm-denyAll').click()
+        cy.get('.osano-cm-denyAll').should('be.visible').then($button => {
+            cy.wrap($button).click()
+        })
         cy.contains("With Cypress, you can easily create tests for your modern web applications", { timeout: 10000 }).should('be.visible')
     })
 
