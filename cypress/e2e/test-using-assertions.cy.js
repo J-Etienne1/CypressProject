@@ -3,6 +3,7 @@ it("learning assertions", function(){
     cy.visit("https://example.cypress.io/")
     cy.contains("get").click()
     cy.get('#query-btn', {timeout: 6000})
+        // Implicit Assertions
         .should("contain","Button")
         .should("have.class", "query-btn")
         .should("be.visible")
@@ -15,4 +16,19 @@ it("learning assertions", function(){
     cy.get("#query-btn")
         .should("contain","Button")
         .and("have.class", "query-btn")
+
+
+    // Explicit Assertions
+    // Expect
+    expect(true).to.be.true
+
+    let name = "Jason"
+    expect(name).to.be.equal("Jason")
+
+    // Assert
+    assert.equal(4, 4, "Not equal")
+    //assert.strictEqual(4,"4", "Not Strictly Equal")
+
+
+
 })
