@@ -1,15 +1,16 @@
 
 export class LoginPage{
-    navigate(){
-        cy.visit("https://opensource-demo.orangehrmlive.com/")
+
+    navigate(url){
+        cy.visit(url)
     }
 
-    enterUserName(){
-        cy.get('input[name="username"]').type("Admin")
+    enterUserName(username){
+        cy.get('input[name="username"]').type(username)
     }
 
-    enterPassword(){
-        cy.get('input[name="password"]').type("admin123")
+    enterPassword(password){
+        cy.get('input[name="password"]').type(password)
     }
 
     clickLogin(){
