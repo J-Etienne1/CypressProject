@@ -1,19 +1,23 @@
 
 export class LoginPage{
 
+    loginPage_userName = 'input[name="username"]'
+    loginPage_password = 'input[name="password"]'
+    loginPage_loginButton = '.oxd-button'
+
     navigate(url){
         cy.visit(url)
     }
 
     enterUserName(username){
-        cy.get('input[name="username"]').type(username)
+        cy.get(this.loginPage_userName).type(username)
     }
 
     enterPassword(password){
-        cy.get('input[name="password"]').type(password)
+        cy.get(this.loginPage_password).type(password)
     }
 
     clickLogin(){
-        cy.get('.oxd-button').click()
+        cy.get(this.loginPage_loginButton).click()
     }
 }
