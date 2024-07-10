@@ -1,0 +1,114 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2024-07-10T20:11:02.863Z",
+    "end": "2024-07-10T20:11:14.727Z",
+    "duration": 11864,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c169bc4c-5516-4685-aca8-ca67f5b4a857",
+      "title": "",
+      "fullFile": "cypress\\e2e\\GoogleSearch.cy.js",
+      "file": "cypress\\e2e\\GoogleSearch.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Google search 1st Test",
+          "fullTitle": "Google search 1st Test",
+          "timedOut": null,
+          "duration": 5438,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.log(\"Google 1st Test starts\");\ncy.visit(\"https://google.com\");\ncy.get(\".gLFyf\").type(\"Google 1st Test ends\");\ncy.log(\"Google 1st Test ends\");",
+          "err": {
+            "message": "CypressError: Timed out retrying after 4000ms: `cy.type()` failed because this element:\n\n`<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwiTmr74o52HAxX7T0EAHQDaAV0Q39UDCAQ\"></textarea>`\n\nis being covered by another element:\n\n`<li class=\"gowsYd GwwhGf\">Track o...</li>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+            "estack": "CypressError: Timed out retrying after 4000ms: `cy.type()` failed because this element:\n\n`<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwiTmr74o52HAxX7T0EAHQDaAV0Q39UDCAQ\"></textarea>`\n\nis being covered by another element:\n\n`<li class=\"gowsYd GwwhGf\">Track o...</li>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureIsDescendent (https://www.google.com/__cypress/runner/cypress_runner.js:112445:68)\n    at ensureDescendents (https://www.google.com/__cypress/runner/cypress_runner.js:112496:5)\n    at ensureDescendentsAndScroll (https://www.google.com/__cypress/runner/cypress_runner.js:112502:14)\n    at ensureElIsNotCovered (https://www.google.com/__cypress/runner/cypress_runner.js:112633:5)\n    at runAllChecks (https://www.google.com/__cypress/runner/cypress_runner.js:112832:52)\n    at retryActionability (https://www.google.com/__cypress/runner/cypress_runner.js:112869:16)\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://www.google.com/__cypress/runner/cypress_runner.js:4315:29)\n    at whenStable (https://www.google.com/__cypress/runner/cypress_runner.js:143646:68)\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:143587:14)\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://www.google.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://www.google.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://www.google.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://www.google.com/__cypress/runner/cypress_runner.js:1701:18)\n    at Promise._fulfill (https://www.google.com/__cypress/runner/cypress_runner.js:1645:18)\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:5450:46)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypress_project/./cypress/e2e/GoogleSearch.cy.js:6:21)",
+            "diff": null
+          },
+          "uuid": "05b61286-3177-4bd4-9042-68e4bd87229a",
+          "parentUUID": "c169bc4c-5516-4685-aca8-ca67f5b4a857",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Google search 2st Test",
+          "fullTitle": "Google search 2st Test",
+          "timedOut": null,
+          "duration": 4544,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.log(\"Google 2st Test starts\");\ncy.visit(\"https://google.com\");\ncy.get(\".gLFyf\").type(\"Google 2st Test ends\");\ncy.log(\"Google 2st Test ends\");",
+          "err": {
+            "message": "CypressError: Timed out retrying after 4000ms: `cy.type()` failed because this element:\n\n`<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwjukY77o52HAxVlXEEAHWESBpwQ39UDCAQ\"></textarea>`\n\nis being covered by another element:\n\n`<li class=\"gowsYd GwwhGf\">Track o...</li>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+            "estack": "CypressError: Timed out retrying after 4000ms: `cy.type()` failed because this element:\n\n`<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwjukY77o52HAxVlXEEAHWESBpwQ39UDCAQ\"></textarea>`\n\nis being covered by another element:\n\n`<li class=\"gowsYd GwwhGf\">Track o...</li>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureIsDescendent (https://www.google.com/__cypress/runner/cypress_runner.js:112445:68)\n    at ensureDescendents (https://www.google.com/__cypress/runner/cypress_runner.js:112496:5)\n    at ensureDescendentsAndScroll (https://www.google.com/__cypress/runner/cypress_runner.js:112502:14)\n    at ensureElIsNotCovered (https://www.google.com/__cypress/runner/cypress_runner.js:112633:5)\n    at runAllChecks (https://www.google.com/__cypress/runner/cypress_runner.js:112832:52)\n    at retryActionability (https://www.google.com/__cypress/runner/cypress_runner.js:112869:16)\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://www.google.com/__cypress/runner/cypress_runner.js:4315:29)\n    at whenStable (https://www.google.com/__cypress/runner/cypress_runner.js:143646:68)\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:143587:14)\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://www.google.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://www.google.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://www.google.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://www.google.com/__cypress/runner/cypress_runner.js:1701:18)\n    at Promise._fulfill (https://www.google.com/__cypress/runner/cypress_runner.js:1645:18)\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:5450:46)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypress_project/./cypress/e2e/GoogleSearch.cy.js:14:21)",
+            "diff": null
+          },
+          "uuid": "5178edf1-3f45-4b95-818e-e2d095bb92b9",
+          "parentUUID": "c169bc4c-5516-4685-aca8-ca67f5b4a857",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "05b61286-3177-4bd4-9042-68e4bd87229a",
+        "5178edf1-3f45-4b95-818e-e2d095bb92b9"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 9982,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
