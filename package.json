@@ -5,6 +5,7 @@
     "cypress": "^13.13.0"
   },
   "dependencies": {
+    "mochawesome-report-generator": "^6.2.0",
     "typescript": "^5.5.3"
   }
 }
