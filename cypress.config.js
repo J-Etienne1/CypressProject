@@ -11,7 +11,7 @@ module.exports = defineConfig({
       overwrite: false,
       html: false,
       json: true,
-      reportDir: "cypress/report/mochawesome-report"
+      reportDir: "cypress/reports"
     }
   },
 })
