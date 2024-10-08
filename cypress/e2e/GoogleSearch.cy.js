@@ -1,5 +1,3 @@
-
-
 it("Google search 1st Test", () => {
     cy.log("Google 1st Test starts")
     cy.visit("https://google.com")
